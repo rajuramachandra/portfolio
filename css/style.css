@@ -16,10 +16,10 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  header {
+  #main_page_header {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
-      url("../img/main_banner.jpg") no-repeat center center/cover;
+      url("../img/banners/main_banner.jpeg") no-repeat center center/cover;
     background-attachment: fixed;
   }
 
@@ -28,6 +28,7 @@
     align-items: center;
     justify-content: space-around;
     height: 70px;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); */
   }
 
   #main_navbar .logo_heading {
@@ -49,7 +50,7 @@
 
   #main_navbar .menu .menu_list .items.active {
     color: black;
-    border-bottom: 0.1rem solid green;
+    border-bottom: 0.2rem solid green;
   }
 
   #main_navbar .menu .menu_list .items a {
@@ -57,12 +58,12 @@
     padding: 1rem;
     text-decoration: none;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: white;
   }
 
   #main_navbar .menu .menu_list .items a:hover {
-    border-bottom: 0.1rem solid green;
+    border-bottom: 0.2rem solid green;
   }
 
   #main_content {
@@ -148,34 +149,92 @@
     font-size: 1.2rem;
   }
 
-  #cards {
+  /* Certification page CSS */
+
+  #certifications_page_header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+      url("../img/banners/certifications_banner.webp") no-repeat center
+        center/cover;
+    background-attachment: fixed;
+  }
+
+  #certifications {
     display: grid;
+    margin: auto;
+    width: 50%;
+    gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-areas:
+      "a a b"
+      "c c d"
+      "e e f";
   }
 
-  #cards .card {
-    height: 15rem;
-    border: 1px solid black;
-    background: red;
-    transition-duration: 3s;
-  }
-
-  #cards .card:hover {
-    transform: translateY(-100px);
-  }
-
-  #cards .card.clear_cards {
-    display: none;
-  }
-
-  #clear_card_section .clear_all {
+  #certifications .tiles {
     display: flex;
+    align-items: center;
     justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
   }
 
-  #clear_card_section .clear_all .clr_button {
-    width: 100%;
-    padding: 0.5rem;
+  #certifications .a {
+    grid-area: a;
+    animation-name: text;
+    animation-duration: 3s;
+  }
+  #certifications .b {
+    grid-area: b;
+  }
+  #certifications .b .tile1 {
+    height: 20rem;
+    animation-name: image;
+    animation-duration: 3s;
+  }
+  #certifications .c {
+    grid-area: c;
+    animation-name: text;
+    animation-duration: 4s;
+  }
+  #certifications .d {
+    grid-area: d;
+  }
+  #certifications .d .tile2 {
+    height: 20rem;
+    animation-name: image;
+    animation-duration: 4s;
+  }
+  #certifications .e {
+    grid-area: e;
+    animation-name: text;
+    animation-duration: 5s;
+  }
+  #certifications .f {
+    grid-area: f;
+  }
+  #certifications .f .tile3 {
+    height: 20rem;
+    animation-name: image;
+    animation-duration: 5s;
+  }
+
+  @keyframes image {
+    from {
+      transform: translateX(300%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes text {
+    from {
+      transform: translateX(-300%);
+    }
+    to {
+      transform: translateX(0);
+    }
   }
 }
