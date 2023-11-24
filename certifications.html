@@ -6,10 +6,14 @@
     <link rel="stylesheet" media="(max-width:400px)" href="./css/mobile.css" />
     <link
       rel="stylesheet"
-      media="(max-width:800px) and (min-width:401px)"
+      media="(max-width:900px) and (min-width:401px)"
       href="./css/tablet.css"
     />
-    <link rel="stylesheet" media="(min-width:801px)" href="./css/style.css" />
+    <link rel="stylesheet" media="(min-width:901px)" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>Certifications</title>
   </head>
   <body>
@@ -19,43 +23,52 @@
         <div class="menu">
           <ul class="menu_list">
             <li class="items"><a href="index.html">Home</a></li>
-            <li class="items"><a href="#">About</a></li>
+            <li class="items"><a href="#">Resume</a></li>
             <li class="items active">
               <a href="certifications.html">Certifications</a>
             </li>
-            <li class="items"><a href="#">My blogs</a></li>
+            <li class="items"><a href="#">Contact</a></li>
           </ul>
         </div>
       </nav>
       <section id="certifications">
-        <div class="a tiles">AWS certified solutions architect</div>
+        <div class="a tiles tiletext">AWS certified solutions architect</div>
         <div class="b tiles">
           <img
             src="./img/certifications/AWS_SAA.png"
             alt="AWS SAA"
             title="AWS SAA"
-            class="tile1"
+            class="tile1 tileimg"
           />
         </div>
-        <div class="c tiles">AWS Certified Cloud practitioner</div>
+        <div class="c tiles tiletext">AWS Certified Cloud practitioner</div>
         <div class="d tiles">
           <img
             src="./img/certifications/AWS_CP.png"
             alt="AWS Cloud Practitioner"
             title="AWS Cloud Practitioner"
-            class="tile2"
+            class="tile2 tileimg"
           />
         </div>
-        <div class="e tiles">Microsoft Certified Azure Fundamentals</div>
+        <div class="e tiles tiletext">
+          Microsoft Certified Azure Fundamentals
+        </div>
         <div class="f tiles">
           <img
             src="./img/certifications/MS_AF.png"
             alt="AWS Cloud Practitioner"
             title="AWS Cloud Practitioner"
-            class="tile3"
+            class="tile3 tileimg"
           />
         </div>
       </section>
+      <aside id="scroll_top">
+        <a href="#main_navbar"
+          ><span class="material-symbols-outlined"
+            >keyboard_control_key</span
+          ></a
+        >
+      </aside>
     </header>
   </body>
 </html>
