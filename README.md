@@ -1,7 +1,7 @@
-# This is My portfolio page
+# Welcome to my page!!!
 
-# Line 1
+I'm Raju Ramachandra a passionate DevOps and an Automation Engineer from India.
 
-# Line 2
+`Here is my portfolio [link](https://rajuramachandra.github.io/portfolio/)`
 
-# Line 3
+[![pages-build-deployment](https://github.com/rajuramachandra/portfolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/rajuramachandra/portfolio/actions/workflows/pages/pages-build-deployment/badge.svg)
