@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:ital@1&display=swap");
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 901px) {
   * {
     padding: 0;
     margin: 0;
@@ -28,7 +28,6 @@
     align-items: center;
     justify-content: space-around;
     height: 70px;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); */
   }
 
   #main_navbar .logo_heading {
@@ -161,8 +160,8 @@
 
   #certifications {
     display: grid;
-    margin: auto;
-    width: 50%;
+    margin: 1.5rem auto auto auto;
+    width: 55%;
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
@@ -180,43 +179,43 @@
     font-weight: bolder;
   }
 
+  #certifications .tileimg {
+    height: 15rem;
+    animation-name: image;
+  }
+
+  #certifications .tiletext {
+    animation-name: text;
+  }
+
   #certifications .a {
     grid-area: a;
-    animation-name: text;
     animation-duration: 3s;
   }
   #certifications .b {
     grid-area: b;
   }
   #certifications .b .tile1 {
-    height: 20rem;
-    animation-name: image;
     animation-duration: 3s;
   }
   #certifications .c {
     grid-area: c;
-    animation-name: text;
     animation-duration: 4s;
   }
   #certifications .d {
     grid-area: d;
   }
   #certifications .d .tile2 {
-    height: 20rem;
-    animation-name: image;
     animation-duration: 4s;
   }
   #certifications .e {
     grid-area: e;
-    animation-name: text;
     animation-duration: 5s;
   }
   #certifications .f {
     grid-area: f;
   }
   #certifications .f .tile3 {
-    height: 20rem;
-    animation-name: image;
     animation-duration: 5s;
   }
 

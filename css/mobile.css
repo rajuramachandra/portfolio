@@ -16,11 +16,11 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  header {
+  #main_page_header {
     height: 100vh;
     width: 100vw;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
-      url("../img/main_banner.jpg") no-repeat center center/cover;
+      url("../img/banners/main_banner.jpeg") no-repeat center center/cover;
     background-attachment: fixed;
   }
 
@@ -29,7 +29,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); */
     height: 7rem;
   }
 
@@ -138,5 +137,95 @@
 
   .material-symbols-outlined {
     font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 30;
+  }
+
+  /* Certification page CSS */
+
+  #certifications_page_header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+      url("../img/banners/certifications_banner_mobTab.jpg") no-repeat center
+        center/cover;
+    background-attachment: fixed;
+  }
+
+  #certifications {
+    display: grid;
+    margin-top: auto;
+    margin: 15rem auto;
+    width: 80%;
+    gap: 5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "a a b"
+      "c c d"
+      "e e f";
+  }
+
+  #certifications .tiles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  #certifications .tileimg {
+    height: 10rem;
+    animation-name: image;
+  }
+
+  #certifications .tiletext {
+    animation-name: text;
+  }
+
+  #certifications .a {
+    grid-area: a;
+    animation-duration: 3s;
+  }
+  #certifications .b {
+    grid-area: b;
+  }
+  #certifications .b .tile1 {
+    animation-duration: 3s;
+  }
+  #certifications .c {
+    grid-area: c;
+    animation-duration: 4s;
+  }
+  #certifications .d {
+    grid-area: d;
+  }
+  #certifications .d .tile2 {
+    animation-duration: 4s;
+  }
+  #certifications .e {
+    grid-area: e;
+    animation-duration: 5s;
+  }
+  #certifications .f {
+    grid-area: f;
+  }
+  #certifications .f .tile3 {
+    animation-duration: 5s;
+  }
+
+  @keyframes image {
+    from {
+      transform: translateX(300%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes text {
+    from {
+      transform: translateX(-300%);
+    }
+    to {
+      transform: translateX(0);
+    }
   }
 }
