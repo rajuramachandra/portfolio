@@ -236,4 +236,86 @@
       transform: translateX(0);
     }
   }
+
+  /* contact page css  */
+
+  #contact_page_header #main_navbar {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), #2596be;
+  }
+
+  #contact_page_header #contact_form {
+    min-height: 40rem;
+    overflow: auto;
+    background: url("../img/banners/contact_page_banner.jpg") no-repeat center
+      center/cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  #contact_page_header #contact_form .main_text {
+    color: black;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  #contact_page_header #contact_form:hover {
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
+      0 2rem 2rem 0 rgba(0, 0, 0, 0.19);
+  }
+  #contact_page_header #contact_cards {
+    display: grid;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+    grid-template-rows: repeat(1fr, 3);
+    justify-items: center;
+    align-items: center;
+    height: 75rem;
+    gap: 2rem;
+  }
+
+  #contact_page_header #contact_cards .mail {
+    grid-area: a;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #b7b5b5;
+  }
+  #contact_page_header #contact_cards .address {
+    grid-area: b;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #contact_page_header #contact_cards .smicons {
+    grid-area: c;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #b7b5b5;
+  }
+  #contact_page_header #contact_cards .smicons .icons {
+    text-align: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #contact_page_header #contact_cards .contacttext {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
 }
