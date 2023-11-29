@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Kaushan+Script&family=Playball&family=Poppins:wght@500&family=Roboto&family=Roboto+Condensed&display=swap");
 
-@media only screen and (max-width: 900px) and (min-width: 501px) {
+@media only screen and (max-width: 900px) and (min-width: 401px) {
   * {
     padding: 0;
     margin: 0;
@@ -13,7 +13,7 @@
   }
 
   body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
   }
 
   a {
@@ -81,6 +81,7 @@
 
   #main_content .main_content_header {
     color: white;
+    font-family: "Poppins", sans-serif;
     font-size: 3rem;
     text-align: center;
     padding: 0 1rem;
@@ -89,12 +90,13 @@
   #main_content .main_content_header span {
     color: #f7c08a;
     font-weight: bold;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   #main_content .main_content_sub {
     color: white;
     font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
     text-align: center;
     padding: 0 1rem;
   }
@@ -102,7 +104,7 @@
   #main_content .main_content_sub span {
     color: #f7c08a;
     font-weight: bold;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
   #main_content .button {
@@ -248,15 +250,16 @@
   #contact_page_header #contact_form {
     min-height: 40rem;
     overflow: auto;
-    background: url("../img/banners/contact_page_banner.jpg") no-repeat center
-      center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+      url("../img/banners/contact_page_banner_mobtab.jpg") no-repeat center
+        center/cover;
     background-attachment: fixed;
     display: flex;
     align-items: center;
     text-align: center;
   }
   #contact_page_header #contact_form .main_text {
-    color: black;
+    color: white;
     width: 100%;
     font-size: 3rem;
     font-weight: bolder;
@@ -328,7 +331,7 @@
   }
 
   #welcome_note {
-    height: 10rem;
+    font-family: "Poppins", sans-serif;
     font-size: 2rem;
     font-weight: bolder;
     text-align: center;
@@ -343,6 +346,7 @@
   }
 
   #skill_cards .skill_cards_heading {
+    font-family: "Poppins", sans-serif;
     font-size: 3rem;
     font-weight: bolder;
     text-align: center;
@@ -367,11 +371,13 @@
   }
 
   #skill_cards .card_grid .cards h2 {
+    font-family: "Kaushan Script", sans-serif;
     text-align: center;
     font-size: 2rem;
   }
 
   #skill_cards .card_grid .cards p {
+    font-family: "Roboto Condensed", sans-serif;
     padding: 2rem;
     text-align: center;
     font-size: 1.5rem;
