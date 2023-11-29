@@ -13,7 +13,7 @@
   }
 
   body {
-    font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
   a {
@@ -81,7 +81,7 @@
   #main_content .main_content_header {
     color: white;
     font-size: 3rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
     text-align: center;
     padding: 0 1rem;
   }
@@ -89,7 +89,7 @@
   #main_content .main_content_header span {
     color: #f7c08a;
     font-weight: bold;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
   }
 
   #main_content .main_content_sub {
@@ -97,13 +97,13 @@
     font-size: 2.5rem;
     text-align: center;
     padding: 0 1rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
   #main_content .main_content_sub span {
     color: #f7c08a;
     font-weight: bold;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
   }
 
   #main_content .button {
@@ -112,8 +112,9 @@
     background: green;
   }
 
-  #main_content .button a {
+  #main_content .btn a {
     text-decoration: none;
+    font-family: Roboto, sans-serif;
     color: white;
   }
 
@@ -341,7 +342,6 @@
   }
 
   #skill_cards .skill_cards_heading {
-    font-family: "Poppins", sans-serif;
     font-size: 3rem;
     font-weight: bolder;
     text-align: center;
@@ -363,7 +363,6 @@
   }
 
   #skill_cards .card_grid .cards h2 {
-    font-family: "Kaushan Script", sans-serif;
     text-align: center;
     font-size: 2rem;
   }
@@ -372,7 +371,6 @@
     padding: 2rem;
     text-align: center;
     font-size: 1.5rem;
-    font-family: "Roboto Condensed", sans-serif;
   }
 
   #skill_cards .card_grid .cards.card2 p {
